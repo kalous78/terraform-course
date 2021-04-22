@@ -15,11 +15,11 @@ variable "INSTANCE_DEVICE_NAME" {
 }
 
 variable "JENKINS_VERSION" {
-  default = "2.204.5"
+  default = "2.277.3"
 }
 
 variable "TERRAFORM_VERSION" {
-  default = "0.12.23"
+  default = "0.15.0"
 }
 
 variable "APP_INSTANCE_COUNT" {
