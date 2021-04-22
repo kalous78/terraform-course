@@ -9,5 +9,6 @@ cat backend.tf
 echo "------------------------------------------------------------------"
 sleep 10
 aws s3 cp s3://${S3_BUCKET}/amivar.tf amivar.tf --region $AWS_REGION
+cat amivar.tf
 terraform init
 terraform apply -auto-approve -var APP_INSTANCE_COUNT=1 -target aws_instance.app-instance
